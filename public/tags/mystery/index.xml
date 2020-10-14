@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mystery on bice recs</title>
+    <link>http://localhost:1313/tags/mystery/</link>
+    <description>Recent content in mystery on bice recs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/mystery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Haunting of Bly Manor</title>
+      <link>http://localhost:1313/blog/my-first-post/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/my-first-post/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

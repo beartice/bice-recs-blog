@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <article class="post">
+    <header>
+      <div class="title">
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+    <div id="content">
+      {{ .Render "featured" }}
+      {{ .Content }}
+    </div>
+    <footer>
+      {{ .Render "stats" }}
+
+      
+      <div id="socnet-share">
+        {{ partial "share-buttons" . }}
+      </div>
+
+
+    </footer>
+  </article>
+  {{ if not ( eq .Params.comments false) }}
+    {{ .Render "comments" }}
+	
+  {{ end }}
+  <div class="pagination">
+    {{ if .NextInSection }}
+      <a href="{{ .NextInSection.RelPermalink }}" class="button left"><span>{{ .NextInSection.Title }}</span></a>
+    {{ end }}
+    {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.RelPermalink }}" class="button right"><span>{{ .PrevInSection.Title }}</span></a>
+    {{ end }}
+  </div>
+{{ end }}
